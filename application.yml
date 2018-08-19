@@ -1,2 +1,20 @@
-server
-  prot: 8080
+spring:
+  profiles:
+    active:
+      - dev
+      
+---
+
+spring:
+  profiles: dev # 开发环境
+  application:
+    name: microservicecloud-config-edenhao-dev
+    
+---
+
+spring:
+  profiles: dev # 测试环境
+  application:
+    name: microservicecloud-config-edenhao-test
+  
+# 务必将此文件保存为 UTF-8 编码格式
